@@ -6,3 +6,6 @@
 
 下载地址
 [windows 64](https://github.com/3any-ai/cex-exchange-tool/releases/tag/test)
+
+<img width="596" alt="image" src="https://user-images.githubusercontent.com/7599190/220054406-7b48101b-7d73-4712-aa4f-3de470e40d30.png">
+
