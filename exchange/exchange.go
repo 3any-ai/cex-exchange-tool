@@ -62,11 +62,12 @@ func Init(p ParamsData) {
     OpenOrder, _ := strconv.ParseInt(p.OpenOrder, 10, 64)
     OrderSpeed, _ := strconv.ParseInt(p.OrderSpeed, 10, 64)
 
- _, _, err := goexv2.OKx.Spot.GetExchangeInfo() //建议调用
+
+    for  {
+        _, _, err := goexv2.OKx.Spot.GetExchangeInfo() //建议调用
         if err != nil {
             panic(err)
         }
-    for  {
 
       btcUSDTCurrencyPair,_ := goexv2.OKx.Spot.NewCurrencyPair(p.QuotCoin, p.BaseCoin)//建议这样构建CurrencyPair
       if btcUSDTCurrencyPair.Symbol != "" {
